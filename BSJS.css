@@ -1,0 +1,105 @@
+.BSJSScrollableTable {
+	display: block;
+	position: relative;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	overflow: hidden;
+}
+
+.BSJSScrollableTable > .BSJSScrollableArea {
+	height: 100%;
+	overflow: auto;
+}
+
+.BSJSScrollableTable > .BSJSScrollableArea > table > thead {
+	display: table;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+
+.BSJSScrollableTable > table.BSJSModel {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	table-layout: auto;
+	visibility: hidden;
+}
+
+.BSJSScrollableTable th:last-child,
+.BSJSScrollableTable col:last-child {
+	width: auto;
+}
+
+.BSJSScrollableTable th {
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+
+.BSJSScrollableTable td > div {
+	overflow: hidden;
+}
+
+.BSJSScrollableTable th > div {
+	display: table;
+	width: 100%;
+}
+.BSJSScrollableTable th .BSJSHeaderTitle {
+	display: table-cell;
+	vertical-align: middle;
+	width: 100%;
+}
+.BSJSScrollableTable th .BSJSHeaderControl {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.BSJSScrollableTable > .BSJSSplash {
+	position: absolute;
+	left: 0px;
+	width: 100%;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	display: none;
+}
+
+/* DEFAULT STYLES */
+
+.BSJSScrollableTable table {
+	border-collapse: collapse;
+}
+.BSJSScrollableTable {
+	border: 1px solid gray;
+}
+.BSJSScrollableTable th,
+.BSJSScrollableTable td {
+	border-right: 1px solid gray;
+	border-bottom: 1px solid gray;
+}
+.BSJSScrollableTable th:last-child,
+.BSJSScrollableTable td:last-child {
+	border-right: 0px none;
+}
+.BSJSScrollableTable tr:last-child td {
+	border-bottom: 0px none;
+}
+.BSJSScrollableTable thead {
+	background-color: lightgray;
+	cursor: pointer;
+}
+.BSJSScrollableTable th {
+	padding: 3px 5px;
+}
+.BSJSScrollableTable td {
+	padding: 1px 5px;
+}
+.BSJSScrollableTable .BSJSSortingAscSymbol,
+.BSJSScrollableTable .BSJSSortingDescSymbol {
+	display: none;
+}
+.BSJSScrollableTable .BSJSSortingAsc .BSJSSortingAscSymbol {
+	display: block;
+}
+.BSJSScrollableTable .BSJSSortingDesc .BSJSSortingDescSymbol {
+	display: block;
+}
