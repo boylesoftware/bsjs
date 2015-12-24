@@ -50,7 +50,7 @@ Usually, after including the essential BSJS.css, a custom CSS stylesheet is incl
 
 The BSJS files can be downloaded from here:
 
-http://www.boylesoftware.com/bsjs/release/BSJS.js
+http://www.boylesoftware.com/bsjs/release/BSJS.js<br/>
 http://www.boylesoftware.com/bsjs/release/BSJS.css
 
 For performance reasons, it is recommended to include these files in your web-site instead of sourcing them directly from the Boyle Software site.
@@ -157,15 +157,15 @@ And the parameters are:
 
 	* **message.loading**
 
-		Message temporarily displayed in the table content area while the table is waiting for a response from the back-end. The default is "Loading&hellip;" ("Loading...").
+		Message temporarily displayed in the table content area while the table is waiting for a response from the back-end. The default is "Loading&amp;hellip;" ("Loading&hellip;").
 
 	* **label.sortAsc**
 
-		Label for the indicator in the table header showing that the table is sorted by this column and the order is ascending. The default is "&#x25b2;", which is a triangle pointing up.
+		Label for the indicator in the table header showing that the table is sorted by this column and the order is ascending. The default is "&amp;#x25b2;", which is a triangle pointing up ("&#x25b2;").
 
 	* **label.sortDesc**
 
-		Label for the indicator in the table header showing that the table is sorted by this column and the order is descending. The default is "&#x25bc;", which is a triangle pointing down.
+		Label for the indicator in the table header showing that the table is sorted by this column and the order is descending. The default is "&amp;#x25bc;", which is a triangle pointing down ("&#x25bc;").
 
 Alternatively, instead of overriding resources in the `BSJS.table` parameter, the defaults can be modified by setting the appropriate keys in the global `BSJS.defaultResources` object.
 
@@ -179,7 +179,7 @@ http://myserver.com/data/content.json?s=id:asc,name:desc
 
 The back-end response should have content type *application/json*. The structure of the response is following:
 
-```json
+```
 {
     "sorting": {
         "<column id>": "asc|desc",
